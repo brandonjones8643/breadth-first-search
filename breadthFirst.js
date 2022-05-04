@@ -7,7 +7,7 @@ const graph = {
   f: [],
 };
 
-breathfFirst = (graph, startingNode) => {
+breadthFirst = (graph, startingNode) => {
   const q = [startingNode];
   while (q.length > 0) {
     const current = q.shift();
@@ -17,4 +17,4 @@ breathfFirst = (graph, startingNode) => {
   }
 };
 
-breathfFirst(graph, "a");
+breadthFirst(graph, "a");
